@@ -10,7 +10,6 @@ Para crear la instacia de base de datos en postgres, se debe ejecutar el siguien
 docker compose --env-file .env up -d
 ```
 
-```
 Inspeccionar el contenedor corriendo
   
   ```
@@ -71,11 +70,12 @@ docker-compose up -d pgadmin
 
 Ingresando a pgadmin
 
-  ```
+```
 http://localhost:5050
-  ```
+```
 
 Conectando pgadmin4 con instancia de postgres
+
 
 
 Object > Register  > Server
@@ -128,3 +128,8 @@ Aquí entra la interfaz de Pool de conexiones que permite reutilizar la conexion
 Del modulo de pg admin importaremos el modulo de Pool y se reemplazará por la anterior configuración.
 
 https://node-postgres.com/features/pooling
+
+## Instalación y configuración de Sequelize ORM
+
+https://sequelize.org/docs/v6/
+https://sequelize.org/docs/v6/getting-started/
