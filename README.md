@@ -114,3 +114,15 @@ https://node-postgres.com/
 Ingresando data desde pgadmin4
 
 ![ingresando data desde pgadmin4](./docs/pgadmin-8.png)
+
+## Manejando un pool de conexiones
+
+Un pool de conexiones es un conjunto limitado de conexiones a una base de datos, que es manejado por un servidor de aplicaciones de forma tal, que dichas conexiones pueden ser reutilizadas por los diferentes usuarios.
+
+Hasta este punto por cada llamado a de un servicio a la base de datos se esta creando una conexión, de implementarse asi en todos los servicios se estarian creado multiples conexiones y esto no seria una buena practica.
+
+Aquí entra la interfaz de Pool de conexiones que permite reutilizar la conexion en toda la aplicación.
+
+Del modulo de pg admin importaremos el modulo de Pool y se reemplazará por la anterior configuración.
+
+https://node-postgres.com/features/pooling
