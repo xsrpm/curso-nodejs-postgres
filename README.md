@@ -2,6 +2,8 @@
 
 Profesor: Nicolas Molina
 
+## Configuración de postgres en Docker
+
 Para crear la instacia de base de datos en postgres, se debe ejecutar el siguiente comando:
 
 ```
@@ -96,7 +98,11 @@ CREATE TABLE tasks (
 ```
 
 ![Ejecutando consulta](./docs/pgadmin-4.png)
+
+Consultando la tabla desde pgadmin4
 ![Refrescando la vista](./docs/pgadmin-5.png)
 ![Tabla creada](./docs/pgadmin-6.png)
-![Consultanado la tabla](./docs/pgadmin-7.png)
+![Consultando la tabla](./docs/pgadmin-7.png)
+
+Consultano la tabla desde la terminal
 ![Postgres desde terminal](./docs/postgres-desde-terminal.png)
