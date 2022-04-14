@@ -7,7 +7,9 @@ Profesor: Nicolas Molina
 Para crear la instacia de base de datos en postgres, se debe ejecutar el siguiente comando:
 
 ```
-docker-compose up -d postgres
+docker compose --env-file .env up -d
+```
+
 ```
 Inspeccionar el contenedor corriendo
   
