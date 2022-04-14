@@ -106,3 +106,11 @@ Consultando la tabla desde pgadmin4
 
 Consultano la tabla desde la terminal
 ![Postgres desde terminal](./docs/postgres-desde-terminal.png)
+
+## Integración de node-postgres
+
+https://node-postgres.com/
+
+Ingresando data desde pgadmin4
+
+![ingresando data desde pgadmin4](./docs/pgadmin-8.png)
