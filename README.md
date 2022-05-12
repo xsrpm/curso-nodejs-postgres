@@ -133,6 +133,10 @@ https://node-postgres.com/features/pooling
 
 https://sequelize.org/docs/v6/
 https://sequelize.org/docs/v6/getting-started/
+- 7-step instalación y configuración
+- 8-step tu primer modelo en sequelize
+- 9-step crear, actualizar y eliminar
+- 10-step cambiando la base de datos a MySQL
 
 
 ## Seteando el SGBD
