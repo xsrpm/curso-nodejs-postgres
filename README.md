@@ -133,3 +133,7 @@ https://node-postgres.com/features/pooling
 
 https://sequelize.org/docs/v6/
 https://sequelize.org/docs/v6/getting-started/
+
+
+## Seteando el SGBD
+al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como variable de entorno.

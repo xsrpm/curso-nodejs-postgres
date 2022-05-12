@@ -8,7 +8,7 @@ services:
       - POSTGRES_USER= ${DB_USER}
       - POSTGRES_PASSWORD= ${DB_PASSWORD}
     ports:
-      - ${DB_PORT}:5432
+      - 5432:5432
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
   pgadmin:
@@ -20,3 +20,23 @@ services:
       - 5050:80
     depends_on:
       - postgres
+  mysql:
+    image: mysql:5.7.38
+    environment:
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_PORT=3306
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - PMA_HOST=mysql
+    ports:
+      - 8080:80
+
+

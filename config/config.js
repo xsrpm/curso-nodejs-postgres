@@ -7,7 +7,7 @@ const config = {
   dbPassword: process.env.DB_PASSWORD || 'admin123',
   dbHost: process.env.DB_HOST || 'localhost',
   dbName: process.env.DB_NAME || 'my_store',
-  dbPort: process.env.DB_PORT || 5432,
+  sgbd: process.env.SGBD || 'postgres',
 }
 
 module.exports = config
