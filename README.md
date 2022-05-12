@@ -138,6 +138,9 @@ https://sequelize.org/docs/v6/getting-started/
 - 9-step crear, actualizar y eliminar
 - 10-step cambiando la base de datos a MySQL
 
-
-## Seteando el SGBD
+Seteando el SGBD
 al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como variable de entorno.
+
+## Migraciones
+
+- 11-step - Migraciones en Sequelize ORM
