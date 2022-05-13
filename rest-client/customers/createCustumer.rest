@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/v1/customers
+Content-Type: application/json
+
+{
+  "name":"César",
+  "lastName":"Rsdr1",
+  "phone":"123456789",
+  "userId":1
+}

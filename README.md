@@ -146,3 +146,7 @@ al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como v
 - 11-step - Migraciones en Sequelize ORM
 - 12-step - Modificando una entidad (agregando una columna)
   https://sequelize.org/master/manual/migrations.html
+
+## Relaciones
+
+- 13-step - Relaciones uno a uno
