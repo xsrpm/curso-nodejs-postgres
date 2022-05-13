@@ -1,5 +1,4 @@
-const { config } = require('./../config/config');
-
+const config = require('../config/config');
 const connectionString = require('./connectionString');
 
 module.exports = {
