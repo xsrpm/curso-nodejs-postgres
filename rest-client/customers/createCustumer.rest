@@ -3,7 +3,10 @@ Content-Type: application/json
 
 {
   "name":"César",
-  "lastName":"Rsdr1",
+  "lastName":"Rsdr3",
   "phone":"123456789",
-  "userId":1
+    "user":{
+    "email":"cemp.rsdr3@gmaill.com",
+    "password":"123456789"
+  }
 }
