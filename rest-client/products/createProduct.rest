@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/v1/products
+Content-Type: application/json
+
+{
+  "name":"Camisa nuevaaa",
+  "price":1212,
+  "description":"Camisa nueva",
+  "image":"http://placeimg.com/640/480",
+  "categoryId":1
+}
