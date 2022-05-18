@@ -156,3 +156,23 @@ al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como v
 - 18-step - Relación uno a muchos: Cliente tiene Ordenes, Orden pertenece a Cliente
 - 19-step - Relación Muchos a muchos: Orden tiene Productos, Productos pertenecen a una Orden
 - 20-step - Resolviendo relaciones muchos a muchos anidadas, campos calculados (total)
+
+## Ejecución del proyecto en desarrollo
+npm run dev
+
+## Despliegue a heroku (requiere heroku CLI)
+- Crear una app en heroku -> nombre-proyecto
+- Agregar el repositorio remoto de git otorgado por heroku como remote del repositorio local
+
+      heroku git:remote -a nombre-proyecto
+
+- Agregar una base de datos de postgres para heroku (de prueba)
+
+      heroku addons:create heroku-postgresql:hobby-dev
+- Enviar los cambios actuales al repositorio de heroku  
+
+      git push heroku master
+
+- Correr migraciones de la base de datos
+
+      heroku run migrations:run
