@@ -149,6 +149,8 @@ al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como v
 
 ## Relaciones
 
-- 13-step - Relaciones uno a uno
-- 14-step - Resolviendo las relaciones uno a uno anidadas
-- 15-step/16-step - Relaciones uno a muchos
+- 13-step - Relaciones uno a uno: Usuario tiene un Cliente, Cliente pertenece a Usuario
+- 14-step - Resolviendo las relaciones uno a uno anidadas.
+- 15-step/16-step - Relaciones uno a muchos: Categoría tiene Productos, Producto pertenece a Categoría
+- 17-step - Resolviendo las relaciones uno a muchos anidadas
+- 18-step - Relación uno a muchos: Cliente tiene Ordenes, Orden pertenece a Cliente
