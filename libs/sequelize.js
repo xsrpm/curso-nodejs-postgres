@@ -1,13 +1,26 @@
 const { Sequelize } = require('sequelize');
 const config = require('../config/config');
-const connectionString = require('../db/connectionString');
 
 const setupModels = require('./../db/models');
 
-const sequelize = new Sequelize(connectionString, {
+const options = {
   dialect: `${config.sgbd}`,
-  logging: console.log,
-});
+  logging: (msg)=>{
+    if(!config.isProd){
+      console.log(msg);
+    }
+  },
+}
+
+if (config.isProd) {
+  options.dialectOptions = {
+    ssl: {
+      rejectUnauthorized: false
+    }
+  }
+}
+
+const sequelize = new Sequelize(config.dbUrl, options);
 
 setupModels(sequelize);
 

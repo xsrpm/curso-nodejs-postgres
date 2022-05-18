@@ -1,13 +1,18 @@
+
 const config = require('../config/config');
-const connectionString = require('./connectionString');
 
 module.exports = {
   development: {
-    url: connectionString,
+    url: config.dbUrl,
     dialect: `${config.sgbd}`,
   },
   production: {
-    url: connectionString,
+    url: config.dbUrl,
     dialect: `${config.sgbd}`,
+    dialectOptions: {
+      ssl: {
+        rejectUnauthorized: false
+      }
+    }
   }
 }
