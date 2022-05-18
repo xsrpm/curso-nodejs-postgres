@@ -1,1 +1,1 @@
-http://localhost:3000/api/v1/orders/1
+{{API_URL}}/api/v1/orders/1

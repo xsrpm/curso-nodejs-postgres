@@ -1,2 +1,2 @@
-http://localhost:3000/api/v1/products
+{{API_URL}}/api/v1/products
   ?price=50

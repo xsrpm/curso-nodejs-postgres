@@ -1,0 +1,10 @@
+{
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "API_URL": "http://localhost:3000"
+    },
+    "herokuDeploy": {
+      "API_URL": "https://curso-nodejs-postgres-xsr.herokuapp.com"
+    }
+  }
+}

@@ -1,12 +1,12 @@
-POST http://localhost:3000/api/v1/customers
+POST {{API_URL}}/api/v1/customers
 Content-Type: application/json
 
 {
   "name":"César",
-  "lastName":"Rsdr3",
-  "phone":"123456789",
+  "lastName":"Palma",
+  "phone":"943928822",
     "user":{
-    "email":"cemp.rsdr3@gmaill.com",
-    "password":"123456789"
+    "email":"cemp2703@gmaill.com",
+    "password":"12345678"
   }
 }
