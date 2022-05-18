@@ -2,30 +2,40 @@
 
 Profesor: Nicolas Molina
 
-## Configuración de postgres en Docker
+## Ejecución del proyecto en desarrollo
+
+### Base de datos
 
 Para crear la instacia de base de datos en postgres, se debe ejecutar el siguiente comando:
 
 ```
-docker compose --env-file .env up -d
+docker-compose up -d postgres
+docker-coompose up -d pgadmin
+
 ```
 
-Inspeccionar el contenedor corriendo
+Inspeccionar los contenedores ejecutandose
   
   ```
   docker-compose ps
   ```
 
-Detener y remover la instancia de base de datos
+Detener contenedores
   
   ```
   docker-compose down
   ```
 
-Se creó un volumen para persistir información de la base de datos
+Se creó un volumen para persistir información de la base de datos localmente (Entorno de desarrollo)
   
 
 https://hub.docker.com/_/postgres
+
+### Correr proyecto
+
+npm run dev
+
+
 
 ## Explorando Postgres: interfaces gráficas vs. terminal
 
@@ -156,9 +166,6 @@ al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como v
 - 18-step - Relación uno a muchos: Cliente tiene Ordenes, Orden pertenece a Cliente
 - 19-step - Relación Muchos a muchos: Orden tiene Productos, Productos pertenecen a una Orden
 - 20-step - Resolviendo relaciones muchos a muchos anidadas, campos calculados (total)
-
-## Ejecución del proyecto en desarrollo
-npm run dev
 
 ## Despliegue a heroku (requiere heroku CLI)
 - Crear una app en heroku -> nombre-proyecto
