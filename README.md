@@ -173,12 +173,11 @@ al setear el sgbd a mysql, DB_USER será root e ignorará el valor pasado como v
 
       heroku git:remote -a nombre-proyecto
 
-- Agregar una base de datos de postgres para heroku (de prueba)
-
-      heroku addons:create heroku-postgresql:hobby-dev
 - Enviar los cambios actuales al repositorio de heroku  
 
       git push heroku master
+
+- Agregar una base de datos de postgres. La url en la variable de entorno DATABASE_URL
 
 - Correr migraciones de la base de datos
 
